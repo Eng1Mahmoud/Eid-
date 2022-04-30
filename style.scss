@@ -32,10 +32,10 @@ body{
     margin:auto;
     border-bottom: 1px solid  rgba(255, 255, 255, 0.075);
     border-top: 1px solid  rgba(255, 255, 255, 0.075);
-    
+    cursor: pointer;
     
      .meesage{
-        background-color:rgba(14, 23, 46, 0.9999);
+      
         background-image: url('./pexels-jonathan-petersson-1237119.jpg');
         background-position: center;
         background-size: cover;
@@ -96,7 +96,7 @@ body{
             -moz-border-radius: 50%;
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
-            cursor: pointer;
+        
         }
     }
     .left{
@@ -115,7 +115,7 @@ body{
             -moz-border-radius: 50%;
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
-            cursor: pointer;
+       
        }
     }
     .left,.right
@@ -215,7 +215,44 @@ body{
        -o-transform: perspective(300) rotateY(-85deg);
        perspective-origin: right;
        transform-origin: right;
-}
+    }      
+    .closel{
+        /*animation:open-left  5s  ease-in-out   alternate-reverse;
+        -webkit-animation:open-left  5s  ease-in-out   alternate-reverse;
+        animation-fill-mode: forwards;
+        */border-right: 1px solid rgba(255, 255, 255, 0.075);
+        transition: transform 5s ease-in-out;
+        -webkit-transition: transform 5s ease-in-out;
+        -moz-transition: transform 5s ease-in-out;
+        -ms-transition: transform 5s ease-in-out;
+        -o-transition: transform 5s ease-in-out;
+        transform: perspective(300) rotateY(0deg);
+        -webkit-transform: perspective(300) rotateY(0deg);
+        -moz-transform: perspective(300) rotateY(0deg);
+        -ms-transform: perspective(300) rotateY(0deg);
+        -o-transform: perspective(300) rotateY(0deg);
+        perspective-origin: left;
+        transform-origin: left;
+} 
+    
+    .closer{
+        /*animation:open-left  5s  ease-in-out   alternate-reverse;
+        -webkit-animation:open-left  5s  ease-in-out   alternate-reverse;
+        animation-fill-mode: forwards;
+        */border-right: 1px solid rgba(255, 255, 255, 0.075);
+        transition: transform 5s ease-in-out;
+        -webkit-transition: transform 5s ease-in-out;
+        -moz-transition: transform 5s ease-in-out;
+        -ms-transition: transform 5s ease-in-out;
+        -o-transition: transform 5s ease-in-out;
+        transform: perspective(300) rotateY(0deg);
+        -webkit-transform: perspective(300) rotateY(0deg);
+        -moz-transform: perspective(300) rotateY(0deg);
+        -ms-transform: perspective(300) rotateY(0deg);
+        -o-transform: perspective(300) rotateY(0deg);
+        perspective-origin: right;
+        transform-origin: right;
+} 
   }
 }
 
